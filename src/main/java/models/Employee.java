@@ -50,31 +50,30 @@ public class Employee {
     @Id
     @Column(name = JpaConst.EMP_COL_ID)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;;
+    private Integer id;
 
     /**
      * 社員番号
      */
-    @Column(name = JpaConst.EMP_COL_NAME,nullable =false,unique =true)
+    @Column(name = JpaConst.EMP_COL_CODE, nullable = false, unique = true)
     private String code;
 
     /**
      * 氏名
      */
-    @Column(name = JpaConst.EMP_COL_NAME,nullable = false)
+    @Column(name = JpaConst.EMP_COL_NAME, nullable = false)
     private String name;
 
     /**
      * パスワード
      */
-    @Column(name =JpaConst.EMP_COL_PASS,length =64, nullable = false)
+    @Column(name = JpaConst.EMP_COL_PASS, length = 64, nullable = false)
     private String password;
 
     /**
      * 管理者権限があるかどうか（一般：0、管理者：1）
      */
-
-    @Column(name = JpaConst.EMP_COL_ADMIN_FLAG, nullable =false)
+    @Column(name = JpaConst.EMP_COL_ADMIN_FLAG, nullable = false)
     private Integer adminFlag;
 
     /**
