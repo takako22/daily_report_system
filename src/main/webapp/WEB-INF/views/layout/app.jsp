@@ -35,7 +35,7 @@
                      <div id="employee_name">
                           <c:out value="${sessionScope.login_employee.name }" />
                           &nbsp;さん&nbsp;&nbsp;&nbsp;
-                          <a href="c:url value='?action=${actAuth}&command=${commOut}' />">ログアウト</a>
+                          <a href="<c:url value='?action=${actAuth}&command=${commOut}' />">ログアウト</a>
                      </div>
                   </c:if>
             </div>
